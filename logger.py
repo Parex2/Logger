@@ -37,8 +37,3 @@ class Logger:
         if number < 10:
             return str("0" + str(number))
         return str(number)
-
-
-if __name__ == "__main__":
-    log = Logger(__file__)
-    log.write([1,2,3,4,5,6,7])
