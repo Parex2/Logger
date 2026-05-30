@@ -14,7 +14,7 @@ class Logger:
         self.fp.close()
 
     def write(self, log_message):
-        string_message=log_message
+        string_message=str(log_message)
         self.__concat_date(time.localtime())
         self.fp.write(self.date_time + " ")
         self.fp.write(self.user + " ")
